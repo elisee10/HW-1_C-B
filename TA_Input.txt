@@ -1,0 +1,11 @@
+Install pynacl and get familiar with generating keys, signing messages, and verifying signatures.
+Write up some transactions manually and generate signatures on them using pynacl
+Write a single node that reads transactions, mines blocks, and builds its own blockchain.
+Update this node to also verify transactions before adding them to its blockchain
+Write a driver program that populates a pool of transactions, spins up this one node, waits for it to finish processing, and then exits.
+Change the above node to also broadcast blocks that it mines.
+Write a node that doesn’t mine transactions on its own, but receives broadcasts and builds its own blockchain from them.
+Change the above non-mining node to also verify the broadcasts it receives before it updates its own blockchain (be careful here to ensure that the node can handle forks)
+Update your nodes to both mine themselves and check for broadcasts.
+Test your setup. Give the nodes a number of invalid transactions that should not be included in a blockchain. Make the transactions invalid for as many different reasons as possible. Do the same for blocks, i.e. have a malicious node that broadcasts invalid blocks (again, in as many different ways as possible), and make sure your honest nodes don’t accept them.
+Done!
